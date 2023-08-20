@@ -1,1 +1,80 @@
+.container
+{
+    position: absolute; 
+    height: 45vh; 
+    width: 20vw; 
+    border: 3px solid black; 
+    left: 40%;
+    right: 30%; 
+    bottom: 15%; 
+    border-radius: 20px; 
+    background-color: darkcyan;
+  
+  
+}
+.calculator
+{
+    gap: 4%; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
 
+.number
+{
+    font-size: 1.5em;
+    font-family: "Sofia", sans-serif;
+}
+
+.operator
+{
+    font-size: 1.5em;
+    margin-top: 25%; 
+}
+button
+{
+    border-radius: 40%; 
+    padding: 15%; 
+    margin: 10%; 
+    
+}
+
+.previousNumber
+{
+    position: absolute;
+    left: 50%;
+    font-size: 1.7em;
+    top: 20%; 
+    right: 40%; 
+}
+.currentNumber
+{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 3px; 
+    padding: 1%; 
+    left: 40%;
+    font-size: 2em;
+    top: 29%; 
+    z-index: 1; 
+    right: 40%; 
+}
+
+
+.clear
+{
+    font-family: "Sofia", sans-serif;
+}
+
+a{
+    font-family: "Sofia", sans-serif;
+    font-size: 2em;
+
+}
+
+h1
+{
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    font-size: 4em;
+}

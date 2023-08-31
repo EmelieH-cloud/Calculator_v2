@@ -35,11 +35,6 @@ numberButtons.forEach((btn) => { // each number button should activate the "hand
 
   function handleNumber(number) 
   { 
-    if (previousNum !== "" && currentNum !== "" && operator === "") // will be skipped the first time. 
-    {
-      previousNum = "";
-      currentDisplayNumber.textContent = currentNum;
-    }
     if (currentNum.length <= 11) // while the current number has less than or is equal to 11 characters, append it on the screen. 
      {
       currentNum += number;
@@ -119,9 +114,10 @@ function compute() {
     {
       previousNum *= currentNum;
     }
-     else if (operator === "/") 
+     else if (operator === "/" && currentNum!=0) 
     {
-      if (currentNum <= 0) {
+      if (currentNum <= 0)
+       {
         previousNum = "Error";
         displayResults();
         return;
